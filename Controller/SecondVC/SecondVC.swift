@@ -7,40 +7,41 @@
 //
 
 import UIKit
-protocol PassData {
-    
-    func sendText(text : String)
-}
+
 
 class SecondVC: UIViewController {
 
-    var delegate : PassData?
-    
-    
     @IBOutlet weak var label2: UILabel!
     
     
     @IBOutlet weak var TV: UITextView!
     
-    
-    
-
+  
     @IBAction func backButton(_ sender: Any) {
         
         self.delegate?.sendText(text: TV.text ?? "")
         
         self.dismiss(animated: true, completion: nil)
         
-        
     }
     
+    var delegate : PassData?
+    
     var Name : String = ""
+    
+    var address : String = ""
+    
+    var mail : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         TV.text = Name
-        // Do any additional setup after loading the view.
+                // Do any additional setup after loading the view.
     }
    
 }
 
-
+protocol PassData {
+    
+    func sendText(text : String)
+}

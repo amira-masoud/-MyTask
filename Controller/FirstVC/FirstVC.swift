@@ -35,6 +35,8 @@ class FirstVC: UIViewController , PassData{
     @IBAction func sendButton(_ sender: Any) {
         let vc = SecondVC()
         vc.Name = TF1.text ?? ""
+        vc.address = TF2.text ?? ""
+        vc.mail = TF3.text ?? ""
         
         vc.delegate = self
         self.present(vc, animated: true, completion: nil)
