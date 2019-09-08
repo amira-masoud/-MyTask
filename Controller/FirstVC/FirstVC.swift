@@ -9,13 +9,8 @@
 import UIKit
 
 class FirstVC: UIViewController , PassData{
-    func sendText(text: String) {
-        TF2.text = text
-    }
-    
-    
-    
-
+   
+ 
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var TF1: UITextField!
@@ -33,14 +28,18 @@ class FirstVC: UIViewController , PassData{
         // Do any additional setup after loading the view.
     }
 
-
+    func sendText(text: String) {
+        TF2.text = text
+    }
+    
     @IBAction func sendButton(_ sender: Any) {
         let vc = SecondVC()
-        self.present(vc, animated: true, completion: nil)
-        
         vc.Name = TF1.text ?? ""
         
         vc.delegate = self
+        self.present(vc, animated: true, completion: nil)
+        
+        
  }
     
 

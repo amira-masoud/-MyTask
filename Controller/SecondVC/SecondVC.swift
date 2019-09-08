@@ -10,8 +10,6 @@ import UIKit
 protocol PassData {
     
     func sendText(text : String)
-    
-    
 }
 
 class SecondVC: UIViewController {
@@ -25,11 +23,7 @@ class SecondVC: UIViewController {
     @IBOutlet weak var TV: UITextView!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      TV.text = Name
-        // Do any additional setup after loading the view.
-    }
+    
 
     @IBAction func backButton(_ sender: Any) {
         
@@ -41,7 +35,11 @@ class SecondVC: UIViewController {
     }
     
     var Name : String = ""
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        TV.text = Name
+        // Do any additional setup after loading the view.
+    }
    
 }
 
