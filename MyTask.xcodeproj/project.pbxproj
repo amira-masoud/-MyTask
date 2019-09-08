@@ -14,6 +14,10 @@
 		29C7D1AA23231E2000C88297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C7D1A823231E2000C88297 /* LaunchScreen.storyboard */; };
 		29C7D1B523231E2000C88297 /* MyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C7D1B423231E2000C88297 /* MyTaskTests.swift */; };
 		29C7D1C023231E2100C88297 /* MyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C7D1BF23231E2100C88297 /* MyTaskUITests.swift */; };
+		29C7D1D223231EF000C88297 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C7D1D023231EF000C88297 /* FirstVC.swift */; };
+		29C7D1D323231EF000C88297 /* FirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C7D1D123231EF000C88297 /* FirstVC.xib */; };
+		29C7D1D823231F2A00C88297 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C7D1D623231F2A00C88297 /* SecondVC.swift */; };
+		29C7D1D923231F2A00C88297 /* SecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C7D1D723231F2A00C88297 /* SecondVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		29C7D1BB23231E2000C88297 /* MyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C7D1BF23231E2100C88297 /* MyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaskUITests.swift; sourceTree = "<group>"; };
 		29C7D1C123231E2100C88297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C7D1D023231EF000C88297 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		29C7D1D123231EF000C88297 /* FirstVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstVC.xib; sourceTree = "<group>"; };
+		29C7D1D623231F2A00C88297 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		29C7D1D723231F2A00C88297 /* SecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,21 +85,24 @@
 		29C7D19323231E1E00C88297 = {
 			isa = PBXGroup;
 			children = (
+				29C7D1CD23231E6400C88297 /* Model */,
+				29C7D1CF23231E9300C88297 /* View */,
+				29C7D1CE23231E7E00C88297 /* Controller */,
 				29C7D19E23231E1E00C88297 /* MyTask */,
 				29C7D1B323231E2000C88297 /* MyTaskTests */,
 				29C7D1BE23231E2100C88297 /* MyTaskUITests */,
-				29C7D19D23231E1E00C88297 /* Products */,
+				29C7D19D23231E1E00C88297 /*    */,
 			);
 			sourceTree = "<group>";
 		};
-		29C7D19D23231E1E00C88297 /* Products */ = {
+		29C7D19D23231E1E00C88297 /*    */ = {
 			isa = PBXGroup;
 			children = (
 				29C7D19C23231E1E00C88297 /* MyTask.app */,
 				29C7D1B023231E2000C88297 /* MyTaskTests.xctest */,
 				29C7D1BB23231E2000C88297 /* MyTaskUITests.xctest */,
 			);
-			name = Products;
+			name = "  ";
 			sourceTree = "<group>";
 		};
 		29C7D19E23231E1E00C88297 /* MyTask */ = {
@@ -99,9 +110,7 @@
 			children = (
 				29C7D19F23231E1E00C88297 /* AppDelegate.swift */,
 				29C7D1A123231E1E00C88297 /* ViewController.swift */,
-				29C7D1A323231E1E00C88297 /* Main.storyboard */,
 				29C7D1A623231E2000C88297 /* Assets.xcassets */,
-				29C7D1A823231E2000C88297 /* LaunchScreen.storyboard */,
 				29C7D1AB23231E2000C88297 /* Info.plist */,
 			);
 			path = MyTask;
@@ -123,6 +132,49 @@
 				29C7D1C123231E2100C88297 /* Info.plist */,
 			);
 			path = MyTaskUITests;
+			sourceTree = "<group>";
+		};
+		29C7D1CD23231E6400C88297 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		29C7D1CE23231E7E00C88297 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				29C7D1D423231EF800C88297 /* FirstVC */,
+				29C7D1D523231F0900C88297 /* SecondVC */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		29C7D1CF23231E9300C88297 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29C7D1A323231E1E00C88297 /* Main.storyboard */,
+				29C7D1A823231E2000C88297 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29C7D1D423231EF800C88297 /* FirstVC */ = {
+			isa = PBXGroup;
+			children = (
+				29C7D1D023231EF000C88297 /* FirstVC.swift */,
+				29C7D1D123231EF000C88297 /* FirstVC.xib */,
+			);
+			path = FirstVC;
+			sourceTree = "<group>";
+		};
+		29C7D1D523231F0900C88297 /* SecondVC */ = {
+			isa = PBXGroup;
+			children = (
+				29C7D1D623231F2A00C88297 /* SecondVC.swift */,
+				29C7D1D723231F2A00C88297 /* SecondVC.xib */,
+			);
+			path = SecondVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +265,7 @@
 				Base,
 			);
 			mainGroup = 29C7D19323231E1E00C88297;
-			productRefGroup = 29C7D19D23231E1E00C88297 /* Products */;
+			productRefGroup = 29C7D19D23231E1E00C88297 /*    */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -229,7 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C7D1D923231F2A00C88297 /* SecondVC.xib in Resources */,
 				29C7D1AA23231E2000C88297 /* LaunchScreen.storyboard in Resources */,
+				29C7D1D323231EF000C88297 /* FirstVC.xib in Resources */,
 				29C7D1A723231E2000C88297 /* Assets.xcassets in Resources */,
 				29C7D1A523231E1E00C88297 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C7D1A223231E1E00C88297 /* ViewController.swift in Sources */,
+				29C7D1D223231EF000C88297 /* FirstVC.swift in Sources */,
+				29C7D1D823231F2A00C88297 /* SecondVC.swift in Sources */,
 				29C7D1A023231E1E00C88297 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
