@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class SecondVC: UIViewController {
 
     @IBOutlet weak var label2: UILabel!
@@ -35,7 +34,7 @@ class SecondVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        TV.text = Name
+        TV.text = Name + " ,"  + address + " ," + mail
                 // Do any additional setup after loading the view.
     }
    
